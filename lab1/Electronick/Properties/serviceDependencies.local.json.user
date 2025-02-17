@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2023-12-01T23:46:18.9971318Z"
+    },
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2025-02-10T09:18:18.288818Z"
+    }
+  },
+  "parameters": {
+    "appInsights1.resourceGroupName": {
+      "Name": "appInsights1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "lab"
+    },
+    "appInsights1.subscriptionId": {
+      "Name": "appInsights1.subscriptionId",
+      "Type": "subscription",
+      "Value": "d2ff102c-786f-4dd7-a088-e9429bcf854f"
+    }
+  }
+}
