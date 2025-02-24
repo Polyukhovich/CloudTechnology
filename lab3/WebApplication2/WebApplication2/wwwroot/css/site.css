@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #61238c;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+
+.message {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .message:hover {
+        transform: scale(1.1);
+    }
+
+.floating-image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    animation: float 5s infinite ease-in-out;
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
