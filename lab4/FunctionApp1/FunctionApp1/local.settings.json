@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_INPROC_NET8_ENABLED": "dotlet-isolated",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "sourceContainerName": "polyukhovichsource",
+    "targetContainerName": "polyukhovichdestination",
+    "blobConn": "DefaultEndpointsProtocol=https;AccountName=storagelab4servise;AccountKey=y0xHoRA8sqte7VmhSGATfBHelQPcWyEjKvb+ET2LRwyXADKtNFAm34MO4vmAb27R/dW9JILJKsBw+ASt2AoEEA==;EndpointSuffix=core.windows.net",
+    "textAnalyticsEndpoint": "https://lab4sevices.cognitiveservices.azure.com/",
+    "textAnalyticsLocation": "eastus",
+    "textAnalyticsKey": "FsCOX0mTwl8C4FXOcCK2hxV90efi0BoXKBRnV6vzgptM2t9dNefyJQQJ99BCACYeBjFXJ3w3AAAaACOGp1Wy"
+  }
+}
