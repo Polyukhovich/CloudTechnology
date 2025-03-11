@@ -1,0 +1,47 @@
+﻿@model WebApplication2.Models.EntityModel
+
+@{
+    ViewData["Title"] = "Analyze Text";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Analyze Text</h1>
+
+    <form method="post" asp-action="AnalyzeText">
+        <div class="mb-3">
+            <label for="inputText" class="form-label fw-bold">Enter text for analysis::</label>
+            <textarea class="form-control" id="inputText" name="inputText" rows="6" placeholder="For example: Shevchenko was born in the village of Morintsi..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Аналізувати</button>
+    </form>
+
+    @if (Model?.Entities != null && Model.Entities.Any())
+    {
+        <hr class="my-4" />
+        <h2 class="mb-3">Знайдені сутності:</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Назва</th>
+                        <th>Посилання</th>
+                        <th>Ймовірність</th>
+                        <th>Опис</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var entity in Model.Entities)
+                    {
+                        <tr>
+                            <td>@entity.Name</td>
+                            <td><a href="@entity.Url" target="_blank">Перейти</a></td>
+                            <td>@entity.ConfidenceScore</td>
+                            <td>@entity.Description</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
